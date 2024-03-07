@@ -1,13 +1,14 @@
 function carregar () {
     var msgD = window.document.getElementById('div-msg')
-    var msgH = window.document.getElementById('h2-msg')
+    var msgH = window.document.getElementById('h1-msg')
     var img = window.document.getElementById('img')
     var data = new Date()
     var hora = data.getHours()
     var min = data.getMinutes()
+    var horaFormatada = hora < 10 ? `0${hora}` : hora
+    var minFormatado = min < 10 ? `0${min}` : min
 
-    msgD.innerHTML = `Agora são ${hora}:${min}`
-    msgH.innerHTML = `Hora do Dia`
+    msgD.innerHTML = `Agora são ${horaFormatada}:${minFormatado}`
 
     if (hora >= 5 && hora <= 11) {
         //bom dia
