@@ -55,9 +55,9 @@ main section img#img {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     padding: 5px 0px;
     background-color: white;
     text-align: center;
